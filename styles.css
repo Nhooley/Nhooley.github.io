@@ -1,0 +1,114 @@
+body{
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 45%, rgba(255,255,255,1) 70%, rgba(0,0,255,1) 100%);
+    display: grid;
+    grid-template-rows: 32vh 58vh 10vh;
+    grid-template-columns: 10vw 90vw;
+    grid-template-areas: 
+    'header header'
+    'aside section'
+    'footer footer';
+    margin: 0;
+    overflow: auto;
+}
+
+.header {
+    grid-area: header;
+    background-image: url(img/Waving\ flag.png);
+    background-size: cover;
+    border-bottom: solid 10px black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.run{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+}
+.ds5{ 
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    padding-left: 18vw;
+    font-size: 4vh;
+}
+.xp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+}
+
+
+section {
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0% 70% 30%;
+    grid-template-areas: 
+    'empty declare empty2';
+}
+
+section > .declare {
+    margin: 0px 20px 0px 20px;
+    background-attachment: 0;
+    padding: 15px;
+    font-family: 'Verdana';
+    font-size: 2vh;
+}
+.empty2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty2 > img {
+    height: 40vh;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    color: white;
+    grid-area: aside;
+    font-size: 2.5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+aside button {
+    border: none;
+    background-color: inherit;
+    font-size: 2.5vh;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#myBtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%
+}
+
+#myModal > .modal-content{
+    width: 30%;
+    padding: 2%;
+    background: rgb(255,0,0);
+    background: linear-gradient(135deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 50%, rgba(0,0,255,1) 100%);
+}
+#myModal > .modal-content > p {
+    color: black;
+    overflow-y: auto;
+}

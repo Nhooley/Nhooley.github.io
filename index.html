@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+        <style>/* The Modal (background) */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 2; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+              }
+              
+              /* Modal Content/Box */
+              .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto; /* 15% from the top and centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%; /* Could be more or less, depending on screen size */
+              }
+              
+              /* The Close Button */
+              .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+              }
+              
+              .close:hover,
+              .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+              }</style>
+
+    <title>Steve Winters</title>
+</head>
+<body>
+    <div class="header">
+        <div class="run">Steve Winters for Riverton City Council</div>
+        <div class="void"></div>
+        <div class="ds5"> District 5</div>
+        <div class="xp">Experience Matters!</div>
+    </div>
+    <section>
+        <div class="empty"></div>
+        <p class="declare">I am excited and proud to throw my hat in the ring by officially announcing my candidacy for Riverton City Council, district five. Having lived in and raised my family here for over 35 years, my family and I look forward to this challenge. I will run a positive campaign, one in which I will display integrity and honesty in all my interactions and treat all I encounter with the utmost respect.
+            <br> <br>
+            It will be a great privilege to serve my community on City Council. With over three decades of work experience with local government, I feel my experience makes me well suited for this opportunity. I will do so by listening openly to the concerns of all our community members with the goal of building a better Riverton, one that thrives economically and maintains that “small town” feel in our neighborhoods.
+            <br> <br>
+            We live in a great city! Let’s work together to make it an even better place to live, work and play!</p>
+        <div class="empty2">
+            <img src="img/steve-portrait.jpg" alt="steve portrait">
+        </div>
+    </section>
+    <aside>
+        <button id="myBtn">
+            <div>Vision</div>
+            <div>Goals</div>
+            <div>Experience</div>
+        </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p><span style="text-decoration: underline;">EXPERIENCE</span> <br>
+                            &emsp;<span style="font-size: 80%">- 35 years of government experience <br>
+                            &emsp;- Contract negotiation <br>
+                            &emsp;- Dispute resolution <br>
+                            &emsp;- Public safety <br>
+                            &emsp;- Budget &amp; planning <br>
+                            &emsp;- Emergency management services <br>
+                            &emsp;- Strong labor and business service involvement <br>
+                            &emsp;- I know how to get the job done </span>
+                        
+                        <br><br><br>
+
+                        <span style="text-decoration: underline;">VISION</span> <br>
+                        &emsp;<span style="font-size: 80%">- I will work tirelessly to improve Redwood Road <br> &ensp;
+                            &emsp; &ensp;<span style="font-size: 80%">- Nothing has been done to improve Redwood Road after it was released back to Riverton
+                        City</span><br>
+                        &emsp;- Water conservation <br>
+                        &emsp;- Public Safety – Police and Fire <br>
+                        &emsp;- Being responsible with your tax-dollars <br> &ensp;
+                        &emsp; &ensp;<span style="font-size: 80%">- Commitment to balancing the budget</span> <br>
+                        &emsp;- Improve services to our senior citizens <br>
+                        &emsp;- Transportation and infrastructure <br>
+                        &emsp;- Open communication and transparency <br> &ensp;
+                        &emsp; &ensp;<span style="font-size: 80%">- I commit to returning phone calls and emails from constituents quickly</span>
+                        </span>
+
+                        <br><br><br>
+
+                        <span style="text-decoration: underline;">ABOUT</span> <br>
+                        <span style="font-size:80%">I have lived in Riverton for 35 years. I raised my family here and have seen Riverton grow from a
+                        small community with a single grocery store to the city it is today. Over the years, I have been very
+                        involved in city issues including road expansion, water issues, public safety services and tax issues. I
+                        want to work with the residents regarding proposed expansion of Trax on 12600 South, maintaining
+                        open spaces for all residents to enjoy and control growth so Riverton maintains its small-town charm. I
+                        understand and am mindful of resident’s property tax concerns and want Riverton to be affordable for
+                        all those who call Riverton home. I want fair and equal treatment for all residents and will fight hard for
+                        District 5.</span></p>
+                </div>
+            </div>
+       
+
+            <script>
+                // Get the modal
+                var modal = document.getElementById("myModal");
+    
+                // Get the button that opens the modal
+                var btn = document.getElementById("myBtn");
+    
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+    
+                // When the user clicks on the button, open the modal
+                btn.onclick = function () {
+                    modal.style.display = "block";
+                }
+    
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+    
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function (event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+    </aside>
+    <div class="footer">
+        <p>stevewintersforriverton.com</p>
+    </div>
+</body>
+</html>
