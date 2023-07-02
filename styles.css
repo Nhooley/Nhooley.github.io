@@ -84,7 +84,7 @@ aside {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
+}/*
 aside button {
     border: none;
     background-color: inherit;
@@ -108,4 +108,9 @@ aside button {
 #myModal > .modal-content > p {
     color: black;
     overflow-y: auto;
+}
+*/
+a {
+    text-decoration: none;
+    color: black;
 }
