@@ -96,3 +96,32 @@ a {
     text-decoration: none;
     color: black;
 }
+
+@media (max-width:360px) {
+    body{
+        display: grid;
+        grid-template-rows: 30vh auto 40vh 20vh;
+        grid-template-columns: 100vw;
+        grid-template-areas: 'header'
+        'section'
+        'empty2'
+        'aside'
+        'footer';
+        overflow-x: hidden;
+    }
+    
+    section {
+        display: flex;
+        flex-direction:column;
+    }
+    section > .empty2 > img {
+        width: 2px;
+    }
+
+    .header > div {
+        font-size: 170%;
+    }
+    .header {
+        background-image: url(img/flag2.jpg);
+    }
+}
