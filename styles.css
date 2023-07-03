@@ -76,6 +76,12 @@ section > .declare {
     justify-content: center;
     align-items: center;
 }
+.footer > .center {
+    display: flex;
+}
+.footer > .center > .email {
+    justify-self: center;
+}
 
 aside {
     grid-area: aside;
